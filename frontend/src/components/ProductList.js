@@ -62,7 +62,7 @@ const ProductList = () => {
         <div>
             <h2>Product List</h2>
             <ul>
-                <p>Selected tags(click to delete tag):</p>
+                <p>Selected tags(click on tag to delete it):</p>
                 {tagFilters.map((tag, index) =>
                     <li key={tag.id} onClick={() => {
                         tagFilters.splice(index, 1)
