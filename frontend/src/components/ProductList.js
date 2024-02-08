@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import {TextField} from "@mui/material";
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
@@ -63,7 +62,7 @@ const ProductList = () => {
         <div>
             <h2>Product List</h2>
             <ul>
-                <p>Selected tags:</p>
+                <p>Selected tags(click to delete tag):</p>
                 {tagFilters.map((tag, index) =>
                     <li key={tag.id} onClick={() => {
                         tagFilters.splice(index, 1)
